@@ -10,31 +10,26 @@ func ShowYangHuiTriangle(){
 		for  j:= 0; j < (LINES-i); j++ {
 			fmt.Print(" ")
 		}
-		for index := 0; index < count; index++ {
-			
-		}
-		for < count; indexjgd++ {
-			
-		}
-		for i := 0; i < count; i++ {
-			
-		}
-		for index := 0; index < count; index++ {
-			
-		}
-		for i < count; indexi++ {
-			
-		}
-		for i := 0; index < count; index++ {
-
-		}
-
-
-
-		for index := 0; index < count; index++ {
-			
-		}
+		for j := 0; j < (i+1); j++ {
+			var length = len(nums)
+			var value int
+			if j==0||j==i {
+				value = 1
+			}else {
+				value = nums[length-i] + nums[length-i-1]
+			}
+			nums = append(nums,value)
+			fmt.Print(value," ")
+		} 
+		fmt.Println(" ")
 
 
 	}
+}
+//用数组打印杨辉三角
+func GetYangHuiTriangle(){
+	
+}
+func main(){
+	ShowYangHuiTriangle()
 }
