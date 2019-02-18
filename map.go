@@ -5,6 +5,7 @@ import "fmt"
 func main() {
     var countryCapitalMap map[string]string /*创建集合 */
     countryCapitalMap = make(map[string]string)
+    //map[string]int{}
 
     /* map插入key - value对,各个国家对应的首都 */
     countryCapitalMap [ "France" ] = "Paris"
